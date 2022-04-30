@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Position-free Multiple-bounce Computations for Smith Microfacet
+BSDFs</title>
+
+<meta name="description" content="Position-free Multiple-bounce Computations for Smith Microfacet
+BSDFs">
+<meta name="keywords" content="microfacet model">
+<link rel="stylesheet" type="text/css" href="./MBBRDF_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Position-free Multiple-bounce Computations for Smith Microfacet
+BSDFs
+</center>
+</h1>
+<i>Beibei Wang, Wenhua Jin, Jiahui Fan, Jian Yang, Nicolas Holzschuch, Ling-Qi Yan</i>
+<br><b>ACM Transactions on Graphics (Proceedings of SIGGRAPH 2022)</b>
+<br><br></center>
+
+<center>
+<img alt="WPBGI" src="./MBBRDF_files/MBBRDF.png">
+<br>
+<i> We present a new method to compute multiple bounces for microfacet BSDFs. Our method uses a position-free approach, eliminating the need to trace the heights of previous approaches, significantly reducing noise (see insets). It applies to btoh rough conductors and rough dielectrics. (a) and (b): equal-time comparison with Heitz et al. [2016] for rough conductors (from left to right: copper (GGX model, alpha = 0.1), aluminum (GGX model, alpha = 0.6) and gold (GGX model, alpha = 0.5)). (c) and (d): comparison with Heitz et al. [2016] for a rough dielectric (GGX model, alpha = 1.0). We support both height-correlated and height-uncorrelated shadowing-masking functions. This figure uses the height-correlated model.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+  Bidirectional Scattering Distribution Functions (BSDFs) encode how a material reflects or transmits the incoming light. The most commonly used model is the microfacet BSDF. It computes the material response from the microgeometry of the surface assuming a single bounce on specular microfacets. The original model ignores multiple bounces on the microgeometry, resulting in an energy loss, especially for rough materials. In this paper, we present a new method to compute the multiple bounces inside the microgeometry, eliminating this energy loss. Our method relies on a position-free formulation of multiple bounces inside the microgeometry. We use an explicit mathematical definition of the path space that describes single and multiple bounces in a uniform way. We then study the behavior of light on the different vertices and segments in the path space, leading to a reciprocal multiple-bounce description of BSDFs. Furthermore, we present practical, unbiased Monte Carlo estimators to compute multiple scattering. Our method is less noisy than existing algorithms for computing multiple scattering. It is almost noise-free with a very-low sampling rate, from 2 to 4 samples per pixel (spp). 
+</p>
+
+<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./MBBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p>
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2022/MBBRDF_files/paper_MBBRDF.pdf"><img alt="PDF format" src="./MBBRDF_files/paper-logo.png"></a>
+<a href="https://wangningbei.github.io/2022/MBBRDF_files/MBBRDFVedio.mp4"><img alt="Video" src="./MBBRDF_files/video-logo.png"></a>
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@article{Wang:2022:MBBRDF,
+  author = {Beibei Wang and Wenhua Jin and Jiahui Fan and Jian Yang and Nicolas Holzschuch and Ling-Qi Yan},
+  title = {Position-free Multiple-bounce Computations for Smith Microfacet
+BSDFs},
+  journal ={ACM Transactions on Graphics (Proceedings of SIGGRAPH 2022)},
+  year = {2022},
+  volume = {41},
+  number = {4},
+  pages={134:1--134:14}
+}
+</pre> 
+<p></p>
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
