@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Neural Layered BRDFs</title>
+
+<meta name="description" content="Constant-Cost Spatio-Angular Prefiltering of Glinty Appearance Using Tensor Decomposition">
+<meta name="keywords" content="microstructure">
+<link rel="stylesheet" type="text/css" href="./CONSTGLINTS_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Constant-Cost Spatio-Angular Prefiltering of Glinty Appearance Using Tensor Decomposition
+</center>
+</h1>
+<i>Hong Deng, Yang Liu, Beibei Wang, Jian Yang, Lei Ma, Nicolas Holzschuch, Ling-Qi Yan</i>
+<br><b>ACM TOG (presented at SIGGRAPH 2022)</b>
+<br><br></center>
+
+<center>
+<img alt="WPBGI" src="./CONSTGLINTS_files/CONSTGLINTS.png">
+<br>
+<i> Comparison between our method and Yan et al. [2016] on the Car scene, using a seamlessly tileable normal map of metallic flakes with resolution 2K x 2K under geometric optics. The rendered glints are almost identical, but our method costs less than 1% of time compared to Yan et al. [2016], and does not scale with the view distance.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+The detailed glinty appearance from complex surface microstructures enhances the level of realism, but is both storage- and time-consuming to render, especially when viewed from far away (large spatial coverage) and/or illuminated by area lights (large angular coverage). In this paper, we formulate the glinty appearance rendering process as a spatio-angular range query problem of the Normal Distribution Functions (NDFs), and introduce an efficient spatio-angular prefiltering solution to it. We start by exhaustively precomputing all possible NDFs with differently sized positional coverages. Then we compress the precomputed data using tensor rank decomposition, which
+enables accurate and fast angular range queries. With our spatio-angular prefiltering scheme, we are able to solve both the storage and performance issues at the same time, leading to efficient rendering of glinty appearance with both constant storage and constant performance, regardless of the range of spatio-angular queries. Finally, we demonstrate that our method easily applies to practical rendering applications that were traditionally considered difficult. For example, efficient bidirectional reflection distribution function (BRDF) evaluation accurate NDF importance sampling, fast global illumination between glinty objects, high-frequency preserving rendering
+with environment lighting, and tile-based synthesis of glinty appearance. 
+</p>
+
+<!--<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./NLBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2022/CONSTGLINTS_files/paper_constGlints.pdf"><img alt="PDF format" src="./NLBRDF_files/paper-logo.png"></a>
+<a href="https://wangningbei.github.io/2022/CONSTGLINTS_files/video_constGlints.mp4"><img alt="Video" src="./CONSTGLINTS_files/video-logo.png"></a>
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@article{Deng:2022:CONSTGLINTS,
+  author = {Hong Deng and Yang Liu and Beibei Wang and Jian Yang and Lei Ma and Nicolas Holzschuch and Ling-Qi Yan},
+  title = {Constant-Cost Spatio-Angular Prefiltering of Glinty Appearance Using Tensor Decomposition},
+  journal ={ACM Transactions on Graphics},
+  year = {2022},
+  volume = {41},
+  number = {2},
+  pages={22:1--22:17}
+}
+
+</pre> 
+<p></p>
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
