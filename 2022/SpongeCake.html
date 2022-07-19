@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SpongeCake: A Layered Microflake Surface Appearance Model</title>
+
+<meta name="description" content="SpongeCake: A Layered Microflake Surface Appearance Model">
+<meta name="keywords" content="microflake model">
+<link rel="stylesheet" type="text/css" href="./SpongeCake_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+SpongeCake: A Layered Microflake Surface Appearance Model
+</center>
+</h1>
+<i>Beibei Wang, Wenhua Jin, Jiahui Fan, Jian Yang, Nicolas Holzschuch, Ling-Qi Yan</i>
+<br><b>ACM Transactions on Graphics (Proceedings of SIGGRAPH 2022)</b>
+<br><br></center>
+
+<center>
+<img alt="WPBGI" src="./SpongeCake_files/SpongeCake.png">
+<br>
+<i> In this indoor scene, we model the window shade using our SpongeCake model, with a two-layer configuration: a specular fiber-like microflake layer on the inside and a rougher fiber-like microflake layer at bottom. Three different light settings are shown: exterior sunlight gives a diffuse (but non-Lambertian) transmission effect, while interior lighting leads to a very different specular fabric sheen effect; finally, we combine the two lighting configurations. Our layered model is able to design these kinds of appearances easily, while offering fast analytic evaluation, including an effective multiple scattering approximation; there is a lack of comparable analytic material models with similar benefits.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+In this paper, we propose SpongeCake: a layered BSDF model where each layer is a volumetric scattering medium, defined using microflake or other phase functions. We omit any reflecting and refracting interfaces between the layers. The first advantage of this formulation is that an exact and analytic solution for single scattering, regardless of the number of volumetric  layers, can be derived. We propose to approximate multiple scattering by an additional single-scattering lobe with modified parameters and a Lambertian lobe. We use a parameter mapping neural network to find the parameters of the newly added lobes to closely approximate the multiple scattering effect. Despite the absence of layer interfaces, we demonstrate that many common material effects can be achieved with layers of SGGX microflake and other volumes with appropriate parameters. A normal mapping effect can also be achieved through mapping of microflake orientations, which avoids artifacts common in standard normal maps. Thanks to the analytical formulation, our model is very fast to evaluate and sample. Through various parameter settings, our model is able to handle many types of materials, like plastics, wood, cloth, etc., opening a number of practical applications. 
+</p>
+<!--
+<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./MBBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2022/SpongeCake_files/paper_SpongeCake.pdf"><img alt="PDF format" src="./SpongeCake_files/paper-logo.png"></a>
+<!--<a href="https://wangningbei.github.io/2022/MBBRDF_files/MBBRDFVedio.mp4"><img alt="Video" src="./MBBRDF_files/video-logo.png"></a>-->
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@article{Wang:2022:SpongeCake,
+  author = {Beibei Wang and Wenhua Jin and Milo\v{s} Ha\v{s}an and Ling-Qi Yan},
+  title = {SpongeCake: A Layered Microflake Surface Appearance Model},
+  journal ={ACM Transactions on Graphics},
+  year = {2022},
+}
+</pre> 
+<p></p>
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
