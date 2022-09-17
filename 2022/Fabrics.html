@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Woven Fabric Capture from a Single Photo</title>
+
+<meta name="description" content="Woven Fabric Capture from a Single Photo">
+<meta name="keywords" content="microflake, fabric rendering">
+<link rel="stylesheet" type="text/css" href="./Fabrics_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Woven Fabric Capture from a Single Photo
+</center>
+</h1>
+<i>Wenhua Jin, Beibei Wang*, Milos Hasan, Yu Guo, Steve Marschner, Ling-Qi Yan</i>
+<br><b>Proceedings of SIGGRAPH Asia 2022</b>
+<br><br></center>
+
+<center>
+<img alt="WPBGI" src="./Fabrics_files/Fabrics.png">
+<br>
+<i> Given an input photo of a woven fabric sample, our approach estimates the parameters for our woven fabric material model using an initial neural network estimate, further refined by a differentiable rendering optimization. Re-rendered results with estimated parameters closely match the input photos (columns on the left and right). The resulting fabric parameters can be used for rendering directly, or can be further edited to control the final appearance, as shown in the rendered scene.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+ Digitally reproducing the appearance of woven fabrics is important in many applications of realistic rendering, from interior scenes to virtual characters. However, designing realistic shading models and capturing real fabric samples are both challenging tasks. Previous work ranges from applying generic shading models not meant for fabrics, to data-driven approaches scanning fabrics requiring expensive setups and large data. In this paper, we propose a woven fabric material model and a parameter estimation approach for it. Our lightweight forward shading model treats yarns as bent and twisted cylinders, shading these using a microflake-based bidirectional reflectance distribution function (BRDF) model. We propose a simple fabric capture configuration, wrapping the fabric sample on a cylinder of known radius and capturing a single image under known camera and light positions. Our inverse rendering pipeline consists of a neural network to estimate initial fabric parameters and an optimization based on differentiable rendering to refine the results. Our fabric parameter estimation achieves high-quality recovery of measured woven fabric samples, which can be used for efficient rendering and further edited.
+</p>
+<!--
+<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./Fabrics_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2022/Fabrics_files/paper_InverseSpongeCake.pdf"><img alt="PDF format" src="./Fabrics_files/paper-logo.png"></a>
+<!--<a href="https://wangningbei.github.io/2022/Fabrics_files/MBBRDFVedio.mp4"><img alt="Video" src="./Fabrics_files/video-logo.png"></a>-->
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@inproceedings{Jin:2022:Fabrics,
+  author = {Wenhua Jin and Beibei Wang and Milo\v{s} Ha\v{s}an and Yu Guo and Steve Marschner and Ling-Qi Yan},
+  title = {Woven Fabric Capture from a Single Photo},
+  booktitle={Proceedings of SIGGRAPH Asia 2022},
+  year={2022}
+}
+</pre> 
+<p></p>
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
