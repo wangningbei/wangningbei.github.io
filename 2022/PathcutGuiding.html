@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Woven Fabric Capture from a Single Photo</title>
+
+<meta name="description" content="Unbiased Caustics Rendering Guided by Representative Specular Paths">
+<meta name="keywords" content="path tracing, path cuts, path guiding">
+<link rel="stylesheet" type="text/css" href="./PathcutGuiding_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Woven Fabric Capture from a Single Photo
+</center>
+</h1>
+<i>He Li, Beibei Wang*, Changehe Tu*, Kun Xu, Nicolas Holzschuch, Ling-Qi Yan</i>
+<br><b>Proceedings of SIGGRAPH Asia 2022</b>
+<br><br></center>
+
+<center>
+<img alt="teaser" src="./PathcutGuiding_files/pathcutGuiding.png">
+<br>
+<i> Equal-time (20 minutes) comparison between our method, path tracing (PT), bidirectional path tracing (BDPT), and
+practical path guiding (PPG) [Müller et al. 2017] on the Snail scene. This model is rendered using a dim environment light and a bright point light in front. Zoomed-in insets are rendered using only the point light. Our method has the lowest variance visually and quantitatively, and only requires a 6.5s precomputation time.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+Caustics are interesting patterns caused by the light being focused when reflecting off glossy materials. Rendering them in computer graphics is still challenging: they correspond to high luminous intensity focused over a small area. Finding the paths that contribute to this small area is difficult, and even more difficult when using camera-based path tracing instead of bidirectional approaches. Recent improvements in path guiding are still unable to compute efficiently the light paths that contribute to a caustic. In this paper, we present a novel path guiding approach to enable reliable rendering of caustics. Our approach relies on computing representative specular paths, then extending them using a chain of spherical Gaussians. We use these extended paths to estimate the incident radiance distribution and guide path tracing. We combine this approach with several practical strategies, such as spatial reusing and parallax-aware representation for arbitrarily curved reflectors. Our path-guided algorithm using extended specular paths outperforms
+current state-of-the-art methods and handles multiple bounces of light and a variety of scenes.
+</p>
+<!--
+<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./PathcutGuiding_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2022/PathcutGuiding_files/paper_pathcut_guiding.pdf"><img alt="PDF format" src="./PathcutGuiding_files/paper-logo.png"></a>
+<a href="https://wangningbei.github.io/2022/PathcutGuiding_files/supplementary_pathcut_guiding.pdf"><img alt="PDF format" src="./PathcutGuiding_files/addmat-logo.png"></a>
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@inproceedings{Li:2022:Pathcut,
+  author = {He Li and Beibei Wang and Changehe Tu and Kun Xu and Nicolas Holzschuch and Ling-Qi Yan},
+  title = {Unbiased Caustics Rendering Guided by Representative Specular Pathsv},
+  booktitle={Proceedings of SIGGRAPH Asia 2022},
+  year={2022}
+}
+</pre> 
+<p></p>
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
