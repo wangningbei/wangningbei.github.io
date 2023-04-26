@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Neural Biplane Representation</title>
+
+<meta name="description" content="Neural Biplane Representation for BTF Rendering and Acquisition">
+<meta name="keywords" content="BTF Rendering and Acquisition">
+<link rel="stylesheet" type="text/css" href="./BIPLANEBTF_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Neural Biplane Representation for BTF Rendering and Acquisition
+</center>
+</h1>
+<i>Jiahui Fan, Beibei Wang, Milos Hasan, Jian Yang, Ling-Qi Yan</i>
+<br><b>Proceedings of SIGGRAPH 2023</b>
+<br><br></center>
+
+<center>
+<img alt="BIPLANEBTF" src="./BIPLANEBTF_files/BIPLANEBTF.jpg">
+<br>
+<i> We present a neural biplane model for the representation, compression, and rendering of bidirectional texture functions (BTFs). One key application of our model is a lightweight pipeline for BTF acquisition. In this scene, we showcase a variety of BTFs, including those from the UBO2014 dataset, synthetic analytical BTFs, and real-world materials that were captured using a cell phone with a collocated flash. Our model demonstrates efficient compression and faithful rendering of BTFs, regardless of whether they were obtained through heavyweight or lightweight capture methods or synthetic data. The insets for each material show the raw data and the visualization of our biplane representation.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+Bidirectional Texture Functions (BTFs) are able to represent complex materials with greater generality than traditional analytical models. This holds true for both measured real materials and synthetic ones. Recent advancements in neural BTF representations have significantly reduced storage costs, making them more practical for use in rendering. These representations typically combine spatial feature (latent) textures with neural decoders that handle angular dimensions per spatial location. However, these models have yet to combine fast compression and inference, accuracy, and generality. In this paper, we propose a biplane representation for BTFs, which uses a feature texture in the half-vector domain as well as the spatial domain. This allows the learned representation to encode high-frequency details in both the spatial and angular domains. Our decoder is small yet general, meaning it is trained once and fixed. Additionally, we optionally combine this representation with a neural offset module for parallax and masking effects. Our model can represent a broad range of BTFs and has fast compression and inference due to its lightweight architecture. Furthermore, it enables a simple way to capture BTF data. By taking about 20 cell phone photos with a collocated camera and flash, our model can plausibly recover the entire BTF, despite never observing function values with differing view and light directions. We demonstrate the effectiveness of our model in the acquisition of many measured materials, including challenging materials such as fabrics.
+</p>
+
+<!--<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./NLBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2023/BIPLANEBTF_files/paper_NLBRDF.pdf"><img alt="PDF format" src="./NLBRDF_files/paper-logo.png"></a>
+<!--<a href="https://wangningbei.github.io/2023/BIPLANEBTF_files/video_NLBRDF.mp4"><img alt="Video" src="./NLBRDF_files/video-logo.png"></a> -->
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@inproceedings{Fan:2023:BTF,
+  title={Neural Biplane Representation for BTF Rendering and Acquisition},
+  author={Jiahui Fan and Beibei Wang and Milo\v{s} Ha\v{s}an and Jian Yang and Ling-Qi Yan},
+  booktitle={Proceedings of SIGGRAPH 2023},
+  year={2023}
+}
+
+</pre> 
+<p></p>
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
