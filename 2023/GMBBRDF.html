@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Scratch-based Reflection Art via Differentiable Rendering</title>
+
+<meta name="description" content="Multiple-bounce Smith Microfacet BRDFs using the Invariance Principle">
+<meta name="keywords" content="Smith Microfacet model">
+<link rel="stylesheet" type="text/css" href="./GMBBRDF_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Multiple-bounce Smith Microfacet BRDFs using the Invariance Principle
+</center>
+</h1>
+<i>Yuang Cui, Gaole Pan, Jian Yang, Lei Zhang, Ling-Qi Yan, Beibei Wang</i>
+<br><b>Proceedings of SIGGRAPH Asia 2023</b>
+<br><br></center>
+
+<center>
+<img alt="GMBBRDF" src="./GMBBRDF_files/repre.jpg">
+<br>
+<i>  We propose a multiple-bounce microfacet model derived with the invariance principle. Our model produces results
+with less noise, compared to existing approaches (Heitz et al. [2016] and Bitterli and d'Eon [2022]), with equal time (about
+11.5 seconds for point/directional lighting and 100.0 seconds for environment lighting). Note that the bidirectional reflectance
+distribution function (BRDF) computation by Heitz et al. [2016] is faster than others, so more samples are used for their
+method. Similarly, our method has a simpler formulation than Bitterli and d'Eon [2022], resulting in more samples when
+rendered with equal time.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+Smith microfacet models are widely used in computer graphics to represent materials. Traditional microfacet models do not consider the multiple bounces on microgeometries, leading to visible energy missing, especially on rough surfaces. 
+Later, as the equivalence between the microfacets and volume has been revealed, random walk solutions have been proposed to introduce multiple bounces, but at the cost of high variance. Recently, the position-free property has been introduced into the multiple-bounce model, resulting in much less noise, but also bias or a complex derivation. In this paper, we propose a simple way to derive the multiple-bounce Smith microfacet bidirectional reflectance distribution functions (BRDFs) using the invariance principle. At the core of our model is a shadowing-masking function for a path consisting of direction collections, rather than separated bounces. Our model ensures unbiasedness and can produce less noise compared to the previous work with equal time, thanks to the simple formulation. Furthermore, we also propose a novel probability density function (PDF) for BRDF multiple importance sampling, which has a better match with the multiple-bounce BRDFs, producing less noise than previous naive approximations. 
+</p>
+
+<!--<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./NLBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2023/GMBBRDF_files/paper_GMBBRDF.pdf"><img alt="PDF format" src="./GMBBRDF_files/paper-logo.png"></a>
+<a href="https://wangningbei.github.io/2023/GMBBRDF_files/supplementary_GMBBRDF.pdf"><img alt="PDF format" src="./GMBBRDF_files/addmat-logo.png"></a>
+<!--<a href="https://wangningbei.github.io/2023/BIPLANEBTF_files/video_NLBRDF.mp4"><img alt="Video" src="./NLBRDF_files/video-logo.png"></a> -->
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>
+@inproceedings{Cui:2023:GMBBRDF,
+  title={Multiple-bounce Smith Microfacet BRDFs using the Invariance Principle},
+  author={Yuang Cui and Gaole Pan and Jian Yang and Lei Zhang and Ling-Qi Yan and Beibei Wang},
+  booktitle={Proceedings of SIGGRAPH Asia 2023},
+  year={2023}
+
+</pre> 
+<p></p>
+
+<p><a href="https://wangningbei.github.io" target="_blank" rel="noopener"> Back to Homepage</a></p>
+
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
