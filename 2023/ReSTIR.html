@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>World-Space Spatiotemporal Path Resampling for Path Tracing</title>
+
+<meta name="description" content="World-Space Spatiotemporal Path Resampling for Path Tracing">
+<meta name="keywords" content="realtime global illumination">
+<link rel="stylesheet" type="text/css" href="./RealtimeGI_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+World-Space Spatiotemporal Path Resampling for Path Tracing
+</center>
+</h1>
+<i>Hangyu Zhang and Beibei Wang</i>
+<br><b>Computer Graphics Forum (Proceedings of PG 2023)</b>
+<br><br></center>
+
+<center>
+<img alt="GI" src="./ReSTIR_files/ReSTIRGI.jpg">
+<br>
+<i>Comparison between path tracing, ReSTIR GI [OLK*21] and our method with equal time on two scenes (SAN MIGUEL and BATHROOM) with complex indirect lighting. The mean squared errors (MSE) are shown under the images. The image resolution is 1920 x
+1080. Our method outperforms the other methods both visually and quantitatively.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+  With the advent of hardware-accelerated ray tracing, more and more real-time rendering applications tend to render images
+with ray-traced global illumination (GI). However, the low sample counts at real-time framerates bring enormous challenges
+to existing path sampling methods. Recent work (ReSTIR GI) samples indirect illumination effectively with a dramatic bias
+reduction. However, as a screen-space based path resampling approach, it can only reuse the path at the first bounce and brings
+subtle benefits for complex scenes. To this end, we propose a world-space based spatiotemporal path resampling approach.
+Our approach caches more path samples into a world-space grid, which allows reusing sub-path starting from non-primary
+path vertices. Furthermore, we introduce a practical normal-aware hash grid construction approach, providing more efficient
+candidate samples for path resampling. Eventually, our method achieves improvements ranging from 16.6% to 41.9% in terms
+of mean squared errors (MSE) compared against the previous method with only 4.4% - 8.4% extra time cost.
+</p>
+<!--
+<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./MBBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2023/ReSTIR_files/paper_ReSTIRGI.pdf"><img alt="PDF format" src="../common/paper-logo.png"></a>
+<!--<a href="https://wangningbei.github.io/2023/ReSTIR_files/video_RealtimeGI.mp4"><img alt="Video" src="./RealtimeGI_files/video-logo.png"></a>-->
+<!--<a href="https://wangningbei.github.io/2022/SpongeCake_files/paper_SpongeCake_supplemental.pdf"><img alt="PDF format" src="./SpongeCake_files/addmat-logo.png"></a>-->
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@article{Zhang:2023:WorldReSTIR,
+  author = {Hangyu Zhang and Beibei Wang},
+  title = {World-Space Spatiotemporal Path Resampling for Path Tracing},
+  journal ={Computer Graphics Forum (Proceedings of PG 2023)},
+  year = {2023},
+}
+</pre> 
+<p></p>
+
+<p><a href="https://wangningbei.github.io" target="_blank" rel="noopener"> Back to Homepage</a></p>
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
