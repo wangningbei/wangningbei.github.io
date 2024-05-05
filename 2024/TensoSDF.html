@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>TensoSDF: Roughness-aware Tensorial Representation for Robust Geometry and Material Reconstruction</title>
+
+<meta name="description" content="TensoSDF: Roughness-aware Tensorial Representation for Robust Geometry and Material Reconstruction">
+<meta name="keywords" content="surface reconstruction, inverse rendering">
+<link rel="stylesheet" type="text/css" href="./TensoSDF_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+TensoSDF: Roughness-aware Tensorial Representation for Robust Geometry and Material Reconstruction
+</center>
+</h1>
+<i>Jia Li, Lu Wang#, Lei Zhang, <strong>Beibei Wang#</i>
+<br><b>ACM Transactions on Graphics (Proceedings of SIGGRAPH 2024)</b>
+<br><br></center>
+
+<center>
+<img alt="teaser" src="./TensoSDF_files/Teaser.jpg">
+<br>
+<i> We present a roughness-aware tensorial representation for robust geometry and material reconstruction from multi-view images. In this scene, we showcase six objects with different materials, including diffuse Lego from TensoIR, specular Horse from NeRO, and several glossy objects from NeILF++ and our datasets, where Qilin and Luckycat are real data. Our method demonstrates robust reconstruction of any reflective objects, detailed geometry results and faithful material estimation, leading to photo-realistic relighting.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+Reconstructing objects with realistic materials from multi-view images is problematic, since it is highly ill-posed. Although the neural reconstruction approaches have exhibited impressive reconstruction ability, they are designed for objects with specific materials (e.g., diffuse or specular materials). To this end, we propose a novel framework for robust geometry and material reconstruction, where the geometry is expressed with the implicit signed distance field (SDF) encoded by a tensorial representation, namely TensoSDF. At the core of our method is the roughness-aware incorporation of the radiance and reflectance fields, which enables a robust reconstruction of objects with arbitrary reflective materials. Furthermore, the tensorial representation enhances geometry details in the reconstructed surface and reduces the training time. Finally, we estimate the materials using an explicit mesh for efficient intersection computation and an implicit SDF for accurate representation. Consequently, our method can achieve more robust geometry reconstruction, outperform the previous works in terms of relighting quality, and reduce 50% training times and 70% inference time. Codes and datasets are available at https://github.com/Riga2/TensoSDF.
+</p>
+
+<h1>Downloads</h1>
+<p>
+<a href="https://arxiv.org/abs/2402.02771.pdf"><img alt="PDF format" src="./TensoSDF_files/paper-logo.png"></a>
+<a href="https://github.com/Riga2/TensoSDF"><img alt="Code" src="./TensoSDF_files/code-logo.png"></a>
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>
+
+@article{Li:2024:TensoSDF,
+  title={TensoSDF: Roughness-aware Tensorial Representation for Robust Geometry and Material Reconstruction},
+  author={Jia Li and Lu Wang and Lei Zhang and Beibei Wang},
+  journal ={ACM Transactions on Graphics (Proceedings of SIGGRAPH 2024)},
+  year = {2024},
+  volume = {43},
+  number = {4},
+  pages={150:1--13}
+)
+</pre> 
+<p></p>
+
+<p><a href="https://wangningbei.github.io" target="_blank" rel="noopener"> Back to Homepage</a></p>
+
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
