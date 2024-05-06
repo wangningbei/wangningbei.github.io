@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Woven Fabric Capture with a Reflection-Transmission Photo Pair</title>
+
+<meta name="description" content="Woven Fabric Capture with a Reflection-Transmission Photo Pair">
+<meta name="keywords" content="fabric capture">
+<link rel="stylesheet" type="text/css" href="./FabricBTDF_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Woven Fabric Capture with a Reflection-Transmission Photo Pair
+</center>
+</h1>
+<b>Yingjie Tang, Zixuan Li,  Milos Hasan, Jian Yang, Beibei Wang#</b>
+
+<br><i>Proceedings of SIGGRAPH 2024</i>
+<br><br></center>
+
+<center>
+<img alt="teaser" src="./FabricBTDF_files/Teaser.jpg">
+<br>
+<i>Given two photos of a woven fabric sample (front-lit and back-lit), our approach estimates the parameters of our proposed woven fabric material model. Re-rendered results with estimated parameters closely match the input photos on the top. The resulting fabric parameters can be used in a rendered scene, either directly or after further editing, by using spatially-varying diffuse color maps.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+Digitizing woven fabrics would be valuable for many applications, from digital humans to interior design. Previous work introduces a lightweight woven fabric acquisition approach by capturing a single reflection image and estimating the fabric parameters with a differentiable geometric and shading model. The renderings of the estimated fabric parameters can closely match the photo; however, the captured reflection image is insufficient to fully characterize the fabric sample reflectance. For instance, fabrics with different thicknesses might have similar reflection images but lead to significantly different transmission. We propose to recover the woven fabric parameters from two captured images: reflection and transmission. At the core of our method is a differentiable bidirectional scattering distribution function (BSDF) model, handling reflection and transmission, including single and multiple scattering. We propose a two-layer model, where the single scattering uses an SGGX phase function as in previous work, and multiple scattering uses a new azimuthally-invariant microflake definition, which we term ASGGX. This new fabric BSDF model closely matches real woven fabrics in both reflection and transmission. We use a simple setup for capturing reflection and transmission photos with a cell phone camera and two point lights, and estimate the fabric parameters via a lightweight network, together with a differentiable optimization. We also model the out-of-focus effects explicitly with a simple solution to match the thin-lens camera better. As a result, the renderings of the estimated parameters can agree with the input images on both reflection and transmission for the first time. The code for this paper is at https://github.com/lxtyin/FabricBTDF-Recovery.}
+</p>
+
+<!--<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./NLBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2023/FabricBTDF_files/paper_fabricBTDF.pdf"><img alt="PDF format" src="./FabricBTDF_files/paper-logo.png"></a>
+<a href="https://wangningbei.github.io/2023/FabricBTDF_files/supplementary_fabricBTDF.pdf"><img alt="PDF format" src="./FabricBTDF_files/addmat-logo.png"></a>
+<a href="https://github.com/lxtyin/FabricBTDF-Recovery"><img alt="Code" src="./FabricBTDF_files/code-logo.png"></a>
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>
+@inproceedings{Tang:2024:FabricBTDF,
+  title={Woven Fabric Capture with a Reflection-Transmission Photo Pair},
+  author={Yingjie Tang and Zixuan Li and Milo\v{s} Ha\v{s}an and Jian Yang and Beibei Wang},
+  booktitle={Proceedings of SIGGRAPH 2024},
+  year={2024}
+
+</pre> 
+<p></p>
+
+<p><a href="https://wangningbei.github.io" target="_blank" rel="noopener"> Back to Homepage</a></p>
+
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
