@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Real-time Neural Woven Fabric Rendering</title>
+
+<meta name="description" content="Real-time Neural Woven Fabric Rendering">
+<meta name="keywords" content="fabric capture">
+<link rel="stylesheet" type="text/css" href="./FabricBTDF_files/style.css">
+</head>
+<body>
+<section>
+
+<center>
+<h1>
+<center>
+Real-time Neural Woven Fabric Rendering
+</center>
+</h1>
+<b>Xiang Chen, Lu Wang#, Beibei Wang#</b>
+
+<br><i>Proceedings of SIGGRAPH 2024</i>
+<br><br></center>
+
+<center>
+<img alt="teaser" src="./NeuralCloth_files/Teaser.png">
+<br>
+<i>We present a neural network for real-time woven fabric rendering. In this Sofa scene, we provide eight different patterns of woven fabrics. Our method can represent several typical types of woven fabrics with a single neural network, which achieves a fast speed and a quality close to the ground truth.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+Woven fabrics are widely used in applications of realistic rendering, where real-time capability is also essential. However, rendering realistic woven fabrics in real time is challenging due to their complex structure and optical appearance, which cause aliasing and noise without many samples. The core of this issue is a multi-scale representation of the fabric shading model, which allows for a fast range query. Some previous neural methods deal with the issue at the cost of training on each material, which limits their practicality. In this paper, we propose a lightweight neural network to represent different types of woven fabrics at different scales. Thanks to the regularity and repetitiveness of woven fabric patterns, our network can encode fabric patterns and parameters as a small latent vector, which is later interpreted by a small decoder, enabling the representation of different types of fabrics. By applying the pixel's footprint as input, our network achieves multi-scale representation. Moreover, our network is fast and occupies little storage because of its lightweight structure. As a result, our method achieves rendering and editing woven fabrics at nearly 60 frames per second on an RTX 3090, showing a quality close to the ground truth and being free from visible aliasing and noise.
+</p>
+
+<!--<h1>Video</h1>
+<p>
+</p><center>
+<iframe width="840" height="630" src="./NLBRDF_files/IoiI9EIwjQI.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<p></p> -->
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2024/NeuralCloth_files/paper_NeuralCloth_Compressed.pdf"><img alt="PDF format" src="./NeuralCloth_files/paper-logo.png"></a>
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>
+@inproceedings{Chen:2024:NeuralCloth,
+  title={Real-time Neural Woven Fabric Rendering},
+  author={Xiang Chen and Lu Wang and Beibei Wang},
+  booktitle={Proceedings of SIGGRAPH 2024},
+  year={2024}
+
+</pre> 
+<p></p>
+
+<p><a href="https://wangningbei.github.io" target="_blank" rel="noopener"> Back to Homepage</a></p>
+
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">&#19979;&#36733;&#35270;&#39057;</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
