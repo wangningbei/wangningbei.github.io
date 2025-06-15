@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0050)https://wangningbei.github.io/2023/DiffGlints.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bidirectional Plateau-Border Scattering Distribution Function for Realistic and Efficient Foam Rendering</title>
+
+<meta name="description" content="Bidirectional Plateau-Border Scattering Distribution Function for Realistic and Efficient Foam Rendering">
+<meta name="keywords" content="Reflectance modeling">
+<link rel="stylesheet" type="text/css" href="./BPSDF_files/style.css">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1106.0" data-gr-ext-installed="">
+<section>
+
+<center>
+<h1>
+<center>
+Bidirectional Plateau-Border Scattering Distribution Function for Realistic and Efficient Foam Rendering
+</center>
+</h1>
+
+<b>Ruizeng Li, Xinyang Liu, Runze Wang, Pengfei Shen, Ligang Liu, Beibei Wang</b>
+
+<br><i>Proceedings of EGSR 2025</i>
+<br><br></center>
+
+<center>
+<img alt="BPSDF" src="./BPSDF_files/teaser.png" width="800">
+<br>
+<i> We introduce the Plateau border structure into liquid foam rendering at the geometric level. We then propose a bidirectional Plateau-border scattering distribution function (BPSDF) to aggregate the scattering within a Plateau border and shorten the path length. By designing a neural representation of the BPSDF, our model can render liquid foams both realistically and efficiently. Our BPSDF can significantly reduce noise compared to volume rendering across various media, from high-scattering to high-absorption and from isotropic to anisotropic media.</i>
+</center>
+
+<h1>Abstract</h1>
+<p>
+Liquid foams are a common phenomenon in our daily life. In computer graphics, rendering realistic foams remains challenging due to their complex geometry and light interactions within the foam. While the structure of the liquid foams has been well studied in the field of physics, it's rarely leveraged for rendering, even though it is essential for achieving realistic appearances. In physics, the intersection of two bubbles creates a liquid-carrying channel known as the Plateau border (PB). In this paper, we introduce the Plateau border into liquid foam rendering by explicitly modeling it at the geometric level. Although modeling of PBs enhances visual realism with path tracing, it suffers from extensive rendering costs due to multiple scattering effects within the medium contained in the PB. To tackle this, we propose a novel scattering function that models the aggregation of scattering within the medium surrounded by a Plateau border, termed the bidirectional Plateau-border scattering distribution function (BPSDF). Since no analytical formulation can be derived for the BPSDF, we propose a neural representation, together with importance sampling and probability distribution functions, to enable Monte Carlo-based rendering. By integrating our BPSDF into path tracing, our method achieves both realistic and efficient rendering of liquid foams, producing images with high fidelity. 
+</p>
+
+
+<h1>Downloads</h1>
+<p>
+<a href="https://wangningbei.github.io/2025/BPSDF_files/paper_bpsdf_compressed.pdf"><img alt="PDF format" src="./BPSDF_files/paper-logo.png"></a>
+<a href="https://wangningbei.github.io/2025/BPSDF_files/supplementary_bpsdf.pdf"><img alt="PDF format" src="./BPSDF_files/addmat-logo.png"></a>
+</p>
+
+
+<h1>BibTex</h1>
+<p>
+</p><pre>@inproceedings{
+  title={Bidirectional Plateau-Border Scattering Distribution Function for Realistic and Efficient Foam Rendering.},
+  author={Li, Ruizeng and Liu, Xinyang and Wang, Runze and Shen, Pengfei and Liu, Ligang and Wang, Beibei},
+  booktitle={EGSR},
+  year={2025}
+}
+
+</pre> 
+<p></p>
+
+<p><a href="https://wangningbei.github.io/" target="_blank" rel="noopener"> Back to Homepage</a></p>
+
+
+
+</section>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
