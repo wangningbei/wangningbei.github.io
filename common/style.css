@@ -1083,6 +1083,39 @@ h2::after {
   box-shadow: 0 0 0 1px rgba(183,220,216,.11), 0 8px 22px rgba(0,0,0,.22);
 }
 
+/* Wide paper teasers need their own framing; keep every panel visible. */
+.pub-thumb img.paper-thumb-diff {
+  object-fit: contain !important;
+  object-position: 50% 50%;
+  background: #101820;
+}
+
+.pub-thumb img.paper-thumb-macrofacet {
+  object-fit: contain !important;
+  object-position: 50% 48%;
+  background: #0b1117;
+}
+
+.pub-thumb img.paper-thumb-purelight {
+  object-fit: contain !important;
+  object-position: 50% 50%;
+  background: #080d12;
+}
+
+.pub-thumb img.paper-thumb-wide {
+  object-fit: contain !important;
+  object-position: 50% 50%;
+  background: #f5f6f4;
+}
+
+/* Selected scene panels keep their own aspect ratio at every screen width. */
+.pub-thumb img.paper-thumb-scene {
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: 50% 50%;
+  background: transparent;
+}
+
 .pub-authors { color: #819497; }
 .pub-title, .pub-title a { color: #edf6f4 !important; }
 .pub-title a:hover { color: #bfffea !important; text-decoration-color: rgba(111,245,210,.7); }
